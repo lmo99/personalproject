@@ -1,0 +1,13 @@
+[
+    {
+     "name": "JB",
+     "bio":  "An expert relationship counsellor, with over 20 years experience ",   
+     "profileInfo": {
+        "speciality": "relationships",
+        "location": "in-person",
+        "gender": "female",
+        "ethnicity": "black british"
+        } 
+    }
+
+]

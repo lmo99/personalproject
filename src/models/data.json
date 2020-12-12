@@ -1,5 +1,4 @@
-[
-    {
+[  {
      "name": "JB",
      "bio":  "An expert relationship counsellor, with over 20 years experience ",   
      "profileInfo": {
@@ -7,150 +6,50 @@
         "typeOfSession": "Face-to-face",
         "gender": "Female",
         "ethnicity": "Black British"
-        } 
-    }
+        }
+    },
 
     {
-        "name": "JB",
+        "name": "KR",
+        "bio":  "An expert relationship counsellor, experienced in mending family relationships",   
+        "profileInfo": {
+           "speciality": "Families",
+           "typeOfSession": "Face-to-face",
+           "gender": "Female",
+           "ethnicity": "White"
+           }
+       },
+
+    {
+        "name": "AP",
+        "bio":  "An expert relationship counsellor, with over 20 years experience ",   
+        "profileInfo": {
+           "speciality": "Mental Health",
+           "typeOfSession": "Face-to-face",
+           "gender": "Male",
+           "ethnicity": "White"
+           }
+       },
+
+    {
+        "name": "MA",
+        "bio":  "An expert relationship counsellor, with over 20 years experience ",   
+        "profileInfo": {
+           "speciality": "",
+           "typeOfSession": "Face-to-face",
+           "gender": "Female",
+           "ethnicity": "Asian"
+           }
+       },
+
+    {
+        "name": "DL",
         "bio":  "An expert relationship counsellor, with over 20 years experience ",   
         "profileInfo": {
            "speciality": "Relationships",
            "typeOfSession": "Face-to-face",
            "gender": "Female",
            "ethnicity": "Black British"
-           } 
+           }
        }
-
-       {
-        "name": "JB",
-        "bio":  "An expert relationship counsellor, with over 20 years experience ",   
-        "profileInfo": {
-           "speciality": "Relationships",
-           "typeOfSession": "Face-to-face",
-           "gender": "Female",
-           "ethnicity": "Black British"
-           } 
-       }
-
-       {
-        "name": "JB",
-        "bio":  "An expert relationship counsellor, with over 20 years experience ",   
-        "profileInfo": {
-           "speciality": "Relationships",
-           "typeOfSession": "Face-to-face",
-           "gender": "Female",
-           "ethnicity": "Black British"
-           } 
-       }
-
-       {
-        "name": "JB",
-        "bio":  "An expert relationship counsellor, with over 20 years experience ",   
-        "profileInfo": {
-           "speciality": "Relationships",
-           "typeOfSession": "Face-to-face",
-           "gender": "Female",
-           "ethnicity": "Black British"
-           } 
-       }
-
-       {
-        "name": "JB",
-        "bio":  "An expert relationship counsellor, with over 20 years experience ",   
-        "profileInfo": {
-           "speciality": "Relationships",
-           "typeOfSession": "Face-to-face",
-           "gender": "Female",
-           "ethnicity": "Black British"
-           } 
-       }
-
-       {
-        "name": "JB",
-        "bio":  "An expert relationship counsellor, with over 20 years experience ",   
-        "profileInfo": {
-           "speciality": "Relationships",
-           "typeOfSession": "Face-to-face",
-           "gender": "Female",
-           "ethnicity": "Black British"
-           } 
-       }
-
-       {
-        "name": "JB",
-        "bio":  "An expert relationship counsellor, with over 20 years experience ",   
-        "profileInfo": {
-           "speciality": "Relationships",
-           "typeOfSession": "Face-to-face",
-           "gender": "Female",
-           "ethnicity": "Black British"
-           } 
-       }
-   
-       {
-           "name": "JB",
-           "bio":  "An expert relationship counsellor, with over 20 years experience ",   
-           "profileInfo": {
-              "speciality": "Relationships",
-              "typeOfSession": "Face-to-face",
-              "gender": "Female",
-              "ethnicity": "Black British"
-              } 
-          }
-   
-          {
-           "name": "JB",
-           "bio":  "An expert relationship counsellor, with over 20 years experience ",   
-           "profileInfo": {
-              "speciality": "Relationships",
-              "typeOfSession": "Face-to-face",
-              "gender": "Female",
-              "ethnicity": "Black British"
-              } 
-          }
-   
-          {
-           "name": "JB",
-           "bio":  "An expert relationship counsellor, with over 20 years experience ",   
-           "profileInfo": {
-              "speciality": "Relationships",
-              "typeOfSession": "Face-to-face",
-              "gender": "Female",
-              "ethnicity": "Black British"
-              } 
-          }
-   
-          {
-           "name": "JB",
-           "bio":  "An expert relationship counsellor, with over 20 years experience ",   
-           "profileInfo": {
-              "speciality": "Relationships",
-              "typeOfSession": "Face-to-face",
-              "gender": "Female",
-              "ethnicity": "Black British"
-              } 
-          }
-   
-          {
-           "name": "JB",
-           "bio":  "An expert relationship counsellor, with over 20 years experience ",   
-           "profileInfo": {
-              "speciality": "Relationships",
-              "typeOfSession": "Face-to-face",
-              "gender": "Female",
-              "ethnicity": "Black British"
-              } 
-          }
-   
-          {
-           "name": "JB",
-           "bio":  "An expert relationship counsellor, with over 20 years experience ",   
-           "profileInfo": {
-              "speciality": "Relationships",
-              "typeOfSession": "Face-to-face",
-              "gender": "Female",
-              "ethnicity": "Black British"
-              } 
-          }
-
-]
+    ]

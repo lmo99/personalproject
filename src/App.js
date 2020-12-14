@@ -8,41 +8,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-
-        <p>
-          {data[0].name}
-          <br></br>
-          {data[0].bio}
-          <br></br>
-          <br></br>
-          {data[0].profileInfo.speciality}
-          <br></br>
-          {data[0].profileInfo.gender}
-          <br></br>
-          {data[0].profileInfo.typeOfSession}
-          <br></br>
-          {data[0].profileInfo.ethnicity}
-        </p>
-
-        <p>
-          {data[1].name}
-          <br></br>
-          {data[1].bio}
-          <br></br>
-          <br></br>
-          {data[1].profileInfo.speciality}
-          <br></br>
-          {data[1].profileInfo.gender}
-          <br></br>
-          {data[1].profileInfo.typeOfSession}
-          <br></br>
-          {data[1].profileInfo.ethnicity}
-        </p>
-        </header>
-        
+    <div>        
       
         <BrowserRouter>
           <Route exact path="/" render={() => (

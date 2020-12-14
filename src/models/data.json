@@ -6,26 +6,40 @@
         "speciality": "Relationships",
         "typeOfSession": "Face-to-face",
         "gender": "Female",
-        "ethnicity": "Black British"
+        "ethnicity": "Black"
         }
     },
 
     {
+        "id": "1001",
         "name": "KR",
-        "bio":  "An expert relationship counsellor, experienced in mending family relationships",   
+        "bio":  "A wealth of experience with mending family relationships",   
         "profileInfo": {
            "speciality": "Families",
-           "typeOfSession": "Face-to-face",
+           "typeOfSession": "Both",
            "gender": "Female",
            "ethnicity": "White"
            }
        },
 
     {
+        "id": "1002",
         "name": "AP",
-        "bio":  "An expert relationship counsellor, with over 20 years experience ",   
+        "bio":  " ",   
         "profileInfo": {
            "speciality": "Mental Health",
+           "typeOfSession": "Both",
+           "gender": "Female",
+           "ethnicity": "Asian"
+           }
+       },
+
+    {
+        "id": "1003",
+        "name": "MA",
+        "bio":  " ",   
+        "profileInfo": {
+           "speciality": "Addiction",
            "typeOfSession": "Face-to-face",
            "gender": "Male",
            "ethnicity": "White"
@@ -33,24 +47,28 @@
        },
 
     {
-        "name": "MA",
-        "bio":  "An expert relationship counsellor, with over 20 years experience ",   
+        "id": "1004",
+        "name": "DL",
+        "bio":  "10 years experience helping couples mend broken relationships",   
         "profileInfo": {
-           "speciality": "",
-           "typeOfSession": "Face-to-face",
+           "speciality": "Relationships",
+           "typeOfSession": "Both",
            "gender": "Female",
-           "ethnicity": "Asian"
+           "ethnicity": "White"
            }
        },
 
     {
+        "id": "1005",
         "name": "DL",
-        "bio":  "An expert relationship counsellor, with over 20 years experience ",   
+        "bio":  "Experience grief, trauma and PTSD therapist",   
         "profileInfo": {
-           "speciality": "Relationships",
-           "typeOfSession": "Face-to-face",
+           "speciality": "Grief/Trauma",
+           "typeOfSession": "Both",
            "gender": "Female",
-           "ethnicity": "Black British"
+           "ethnicity": "White"
            }
        }
+
+    
     ]

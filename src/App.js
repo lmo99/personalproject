@@ -24,7 +24,6 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
             >
-            Add to Bookmarks
             </a>
         </BrowserRouter> 
         </div>

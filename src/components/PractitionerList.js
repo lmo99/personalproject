@@ -1,12 +1,12 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card } from 'react-bootstrap';
-import Practitioner from './Practitioner';
+import '../assets/Container.css';
 
 const PractitionerList = (props) => {
 console.log(props.data)
     return(
-        <div>
+        <div className="container">
             {props.data.map(profile =><Card style={{ width: '18rem' }}>
                 <Card.Body>
                     <Card.Title>

@@ -1,0 +1,16 @@
+.nav {
+    margin: 12px 10% !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr; 
+    justify-items: center;
+    column-gap: 5%;
+    font-size: 1.5rem;
+    white-space: nowrap;
+}
+
+@media screen and (min-width: 480px) {
+    .nav {
+        margin: 12px 20% !important; 
+        column-gap: 10%;
+    }
+}

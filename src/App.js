@@ -9,8 +9,25 @@ import './App.css';
 
 const App = () => {
 
-  const [practitionerList, setPractitionerList] = useState(data);
+  const [profiles, setProfiles] = useState(data);
+  const [practitionerList, setPractitionerList] = useState([]);
  
+  function addProfile(profile) {
+    setPractitionerList(practitionerList => [...practitionerList, profile]);
+    const newProfiles = profiles.filter(item => item.id !== profile.id)
+    setProfiles(newProfiles);
+  }
+
+  function removeProfile(profile) {
+    const newPractitionerList = practitionerList.filter(item => item.id !== profile.id)
+    setPractitionerList(newPractitionerList);
+    setProfiles(profiles => [...profiles, profile]);
+  }
+
+  if (profiles.length === 0){
+    return 'No profiles found';
+  }
+  
   return (
     <div>        
       
@@ -18,7 +35,7 @@ const App = () => {
           <Route exact path="/" render={() => (
           <>
             <Header practitionerList={practitionerList} />
-            <PractitionerList data={data}/>
+            <PractitionerList data={profiles} buttonFunction={addProfile} buttonText="Add +"/>
            
           </>
             )} />
@@ -27,6 +44,7 @@ const App = () => {
           <>
             <Header practitionerList={practitionerList} />
             <h3>SAVED PROFILES</h3>
+            <PractitionerList data={practitionerList} buttonFunction={removeProfile} buttonText="Remove -"/>
           </>
         )} />
       

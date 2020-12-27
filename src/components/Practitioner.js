@@ -10,6 +10,8 @@ const Practitioner = (props) => {
             <div className="profile__gender">{props.profile.profileInfo.gender}</div>
             <div className="profile__ethnicity">{props.profile.profileInfo.ethnicity}</div>
 
+            <button onClick={() => props.buttonFunction(props.data)}>{props.buttonText}</button>
+
 
 
         </div>

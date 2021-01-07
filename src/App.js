@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import {BrowserRouter, Route} from 'react-router-dom'
 import Header from './components/Header';
 import data from './models/data.json';
-import PractitionerList from './components/PractitionerList'
+import PractitionerList from './components/PractitionerList';
 import logo from './logo.svg';
 import './App.css';
   

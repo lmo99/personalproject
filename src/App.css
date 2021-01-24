@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  color: purple;
 }
 
 .App-logo {
@@ -14,7 +15,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: purple;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,7 +26,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: pink;
 }
 
 @keyframes App-logo-spin {
@@ -38,12 +39,28 @@
 }
 
 h1 {
-  color: rgb(70, 68, 68);
+  color:plum;
   text-align: center;
   font-family:unset;
 }
 
+
+
 div {
-  background-color: whitesmoke;
+  background-color: rgb(240, 240, 232);
+  color: plum;
+  text-align: center;
 }
 
+button {
+  align-self: center;
+  background-color: plum;
+  color:wheat;
+  padding: 15px;
+  border:none;
+  border-radius:50%;
+  cursor:pointer;
+  align-self: center;
+  margin: 4px 2px;
+
+}

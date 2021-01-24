@@ -1,16 +1,22 @@
 import React, { useState } from 'react';
-import {BrowserRouter, Route} from 'react-router-dom'
+import {BrowserRouter, Route} from 'react-router-dom';
+
+import Filter from './components/Filter';
 import Header from './components/Header';
-import data from './models/data.json';
 import PractitionerList from './components/PractitionerList';
+
+import data from './models/data.json';
 import logo from './logo.svg';
+
 import './App.css';
-  
 
 const App = () => {
 
   const [profiles, setProfiles] = useState(data);
   const [practitionerList, setPractitionerList] = useState([]);
+  const [filters, setFilters] = useState({
+    typeOfSession: "online"
+  })
  
   function addProfile(profile) {
     setPractitionerList(practitionerList => [...practitionerList, profile]);
@@ -35,8 +41,8 @@ const App = () => {
           <Route exact path="/" render={() => (
           <>
             <Header practitionerList={practitionerList} />
+            <Filter filters={filters} setFilters={setFilters}/>
             <PractitionerList data={profiles} buttonFunction={addProfile} buttonText="Add +"/>
-           
           </>
             )} />
 

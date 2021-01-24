@@ -3,6 +3,8 @@ import {Link} from 'react-router-dom';
 import '../App.css';
 import '../assets/Nav.css';
 
+<nav class="navbar navbar-default bootsnav"/>
+
 const Header = ({practitionerList}) => {
     return (
         <div>
@@ -14,8 +16,16 @@ const Header = ({practitionerList}) => {
                     Saved Profiles ({practitionerList.length}) 
                 </Link>
             </div>
+
+            
         </div>
+
+        
     );
 }
+
+
+
+
 
 export default Header;

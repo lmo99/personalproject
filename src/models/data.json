@@ -4,7 +4,7 @@
      "bio":  "An expert relationship counsellor, with over 20 years experience ",   
      "profileInfo": {
         "speciality": "Relationships",
-        "typeOfSession": "Face-to-face",
+        "typeOfSession": "In-Person",
         "gender": "Female",
         "ethnicity": "Black"
         }
@@ -40,7 +40,7 @@
         "bio":  "mc ms ncm ",   
         "profileInfo": {
            "speciality": "Addiction",
-           "typeOfSession": "Face-to-face",
+           "typeOfSession": "In-Person",
            "gender": "Male",
            "ethnicity": "White"
            }
@@ -64,11 +64,73 @@
         "bio":  "Experience grief, trauma and PTSD therapist",   
         "profileInfo": {
            "speciality": "Grief/Trauma",
-           "typeOfSession": "Both",
+           "typeOfSession": "Online",
            "gender": "Female",
            "ethnicity": "White"
            }
-       }
+       },
+
+    {
+        "id": "1006",
+        "name": "OC",
+        "bio":  "X",   
+        "profileInfo": {
+            "speciality": "Relationships",
+            "typeOfSession": "Both",
+            "gender": "Female",
+            "ethnicity": "White"
+            }
+        },
+
+    {
+        "id": "1007",
+        "name": "DK",
+        "bio":  "X",   
+        "profileInfo": {
+            "speciality": "Mental Health",
+            "typeOfSession": "Online",
+            "gender": "Male",
+            "ethnicity": "Black"
+            }
+        },
+
+    {
+        "id": "1008",
+        "name": "YD",
+        "bio":  "mc ms ncm ",   
+        "profileInfo": {
+            "speciality": "Addiction",
+            "typeOfSession": "In-Person",
+            "gender": "Male",
+            "ethnicity": "White"
+            }
+        },
+
+    {
+        "id": "1009",
+        "name": "SK",
+        "bio":  "10 years experience helping couples mend broken relationships",   
+        "profileInfo": {
+            "speciality": "Relationships",
+            "typeOfSession": "Both",
+            "gender": "Female",
+            "ethnicity": "White"
+            }
+        },
+
+    {
+        "id": "1010",
+        "name": "GN",
+        "bio":  "Experience grief, trauma and PTSD therapist",   
+        "profileInfo": {
+            "speciality": "Grief/Trauma",
+            "typeOfSession": "Online",
+            "gender": "Female",
+            "ethnicity": "Other"
+            }
+        }
+
+
 
     
     ]

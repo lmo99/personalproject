@@ -12,9 +12,11 @@ const Header = ({practitionerList}) => {
             <h1>Find a therapist that's right for you... </h1>
             <div className="nav">
                 <Link to="/"> Home </Link>
+                <Link to="/myprofile" className="myProfile"> My Profile </Link>
                 <Link to="/savedprofiles" className="savedProfiles"> 
                     Saved Profiles ({practitionerList.length}) 
                 </Link>
+                <Link to="/contactus" className="contactUs"> Contact Us </Link>
             </div>
 
             

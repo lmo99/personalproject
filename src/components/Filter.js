@@ -1,27 +1,60 @@
 import React from 'react';
 import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 
 const Filter = (props) => {
+    let typeOfSession = props.filters.typeOfSession
+
+    const handleSubmit = (event) =>{
+        event.preventDefault();
+        props.filterPractitioners(props.filters);
+    };
+
     return (
-        <Form>
-            <Form.Group controlId="formSession">
-            <div name="typeOfSession" key="online" className="mb-3">
+        <Form onSubmit={handleSubmit}>
+            <div key="online">
                 <Form.Check 
                     type="radio"
                     id="online"
                     label="Online"
-                    onChange={(e) =>{props.setFilters(e.target.value)}} 
+                    name="typeOfSession"
+                    checked={typeOfSession === "online"}
+                    onChange={(e) =>
+                        {props.setFilters({...props.filters, typeOfSession: e.target.id})}
+                    }
+
                 />
             </div>
 
-            <div name="typeOfSession" key="inperson" className="mb-3">
+            <div key="inperson">
                 <Form.Check 
                     type="radio"
                     id="inperson"
                     label="In Person"
+                    name="typeOfSession"
+                    checked={typeOfSession === "inperson"}
+                    onChange={(e) =>
+                        {props.setFilters({...props.filters, typeOfSession: e.target.id})}
+                    }
                 />
             </div>
-            </Form.Group>
+
+             <div key="nopreference">
+                <Form.Check 
+                    type="radio"
+                    id="nopreference"
+                    label="No Preference"
+                    name="typeOfSession"
+                    checked={typeOfSession === "nopreference"}
+                    onChange={(e) =>
+                        {props.setFilters({...props.filters, typeOfSession: e.target.id})}
+                    }
+                />
+            </div>
+
+            <Button type="submit">
+                Submit
+            </Button>
         </Form>
     )
 }

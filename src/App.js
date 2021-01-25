@@ -15,7 +15,7 @@ const App = () => {
   const [profiles, setProfiles] = useState(data);
   const [practitionerList, setPractitionerList] = useState([]);
   const [filters, setFilters] = useState({
-    typeOfSession: "online"
+    typeOfSession: "nopreference"
   })
  
   function addProfile(profile) {
@@ -30,6 +30,15 @@ const App = () => {
     setProfiles(profiles => [...profiles, profile]);
   }
 
+  function filterPractitioners(selectedFilters) {
+    setProfiles(
+      profiles.filter(profile => 
+      profile["profileInfo"]["typeOfSession"] === filters.typeOfSession || 
+      profile["profileInfo"]["typeOfSession"] ==="nopreference")
+
+    )
+  }
+
   if (profiles.length === 0){
     return 'No profiles found';
   }
@@ -41,8 +50,8 @@ const App = () => {
           <Route exact path="/" render={() => (
           <>
             <Header practitionerList={practitionerList} />
-            <Filter filters={filters} setFilters={setFilters}/>
-            <PractitionerList data={profiles} buttonFunction={addProfile} buttonText="Add +"/>
+            <Filter filters={filters} setFilters={setFilters} filterPractitioners={filterPractitioners}/>
+            <PractitionerList data={profiles} buttonFunction={addProfile} buttonText="Save +"/>
           </>
             )} />
 

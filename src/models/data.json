@@ -4,7 +4,7 @@
      "bio":  "An expert relationship counsellor, with over 20 years experience ",   
      "profileInfo": {
         "speciality": "Relationships",
-        "typeOfSession": "In-Person",
+        "typeOfSession": "inperson",
         "gender": "Female",
         "ethnicity": "Black"
         }
@@ -16,7 +16,7 @@
         "bio":  "A wealth of experience with mending family relationships",   
         "profileInfo": {
            "speciality": "Families",
-           "typeOfSession": "Both",
+           "typeOfSession": "nopreference",
            "gender": "Female",
            "ethnicity": "White"
            }
@@ -28,7 +28,7 @@
         "bio":  "xnnsxkamln ",   
         "profileInfo": {
            "speciality": "Mental Health",
-           "typeOfSession": "Both",
+           "typeOfSession": "nopreference",
            "gender": "Female",
            "ethnicity": "Asian"
            }
@@ -40,7 +40,7 @@
         "bio":  "mc ms ncm ",   
         "profileInfo": {
            "speciality": "Addiction",
-           "typeOfSession": "In-Person",
+           "typeOfSession": "inperson",
            "gender": "Male",
            "ethnicity": "White"
            }
@@ -52,7 +52,7 @@
         "bio":  "10 years experience helping couples mend broken relationships",   
         "profileInfo": {
            "speciality": "Relationships",
-           "typeOfSession": "Both",
+           "typeOfSession": "nopreference",
            "gender": "Female",
            "ethnicity": "White"
            }
@@ -64,7 +64,7 @@
         "bio":  "Experience grief, trauma and PTSD therapist",   
         "profileInfo": {
            "speciality": "Grief/Trauma",
-           "typeOfSession": "Online",
+           "typeOfSession": "online",
            "gender": "Female",
            "ethnicity": "White"
            }
@@ -76,7 +76,7 @@
         "bio":  "X",   
         "profileInfo": {
             "speciality": "Relationships",
-            "typeOfSession": "Both",
+            "typeOfSession": "nopreference",
             "gender": "Female",
             "ethnicity": "White"
             }
@@ -88,7 +88,7 @@
         "bio":  "X",   
         "profileInfo": {
             "speciality": "Mental Health",
-            "typeOfSession": "Online",
+            "typeOfSession": "online",
             "gender": "Male",
             "ethnicity": "Black"
             }
@@ -100,7 +100,7 @@
         "bio":  "mc ms ncm ",   
         "profileInfo": {
             "speciality": "Addiction",
-            "typeOfSession": "In-Person",
+            "typeOfSession": "inperson",
             "gender": "Male",
             "ethnicity": "White"
             }
@@ -112,7 +112,7 @@
         "bio":  "10 years experience helping couples mend broken relationships",   
         "profileInfo": {
             "speciality": "Relationships",
-            "typeOfSession": "Both",
+            "typeOfSession": "nopreference",
             "gender": "Female",
             "ethnicity": "White"
             }
@@ -124,7 +124,7 @@
         "bio":  "Experience grief, trauma and PTSD therapist",   
         "profileInfo": {
             "speciality": "Grief/Trauma",
-            "typeOfSession": "Online",
+            "typeOfSession": "online",
             "gender": "Female",
             "ethnicity": "Other"
             }

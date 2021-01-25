@@ -47,7 +47,8 @@ h1 {
 
 
 div {
-  background-color: rgb(240, 240, 232);
+  /* background-color: rgb(240, 240, 232); */
+  background-color: whitesmoke;
   color: plum;
   text-align: center;
 }

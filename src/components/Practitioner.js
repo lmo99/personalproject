@@ -5,7 +5,7 @@ const Practitioner = (props) => {
     console.log(props.data)
         return(
             <div className="container">
-                <Card style={{ width: '20rem'}}>
+                <Card style={{ width: '15rem'}}>
                     <Card.Img variant="top" src="http://romanroadtrust.co.uk/wp-content/uploads/2018/01/profile-icon-png-898.png" />
                     <Card.Body>
                         <Card.Title>

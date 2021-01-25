@@ -42,10 +42,10 @@ const Filter = (props) => {
              <div key="nopreference">
                 <Form.Check 
                     type="radio"
-                    id="nopreference"
+                    id="session_nopreference"
                     label="No Preference"
                     name="typeOfSession"
-                    checked={typeOfSession === "nopreference"}
+                    checked={typeOfSession === "session_nopreference"}
                     onChange={(e) =>
                         {props.setFilters({...props.filters, typeOfSession: e.target.id})}
                     }

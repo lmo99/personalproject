@@ -15,7 +15,8 @@ const App = () => {
   const [profiles, setProfiles] = useState(data);
   const [practitionerList, setPractitionerList] = useState([]);
   const [filters, setFilters] = useState({
-    typeOfSession: "nopreference"
+    typeOfSession: "session_nopreference",
+    gender: "nopreference"
   })
  
   function addProfile(profile) {
@@ -34,7 +35,7 @@ const App = () => {
     setProfiles(
       profiles.filter(profile => 
       profile["profileInfo"]["typeOfSession"] === filters.typeOfSession || 
-      profile["profileInfo"]["typeOfSession"] ==="nopreference")
+      profile["profileInfo"]["typeOfSession"] ==="session_nopreference")
 
     )
   }

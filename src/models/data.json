@@ -16,7 +16,7 @@
         "bio":  "A wealth of experience with mending family relationships",   
         "profileInfo": {
            "speciality": "Families",
-           "typeOfSession": "nopreference",
+           "typeOfSession": "session_nopreference",
            "gender": "Female",
            "ethnicity": "White"
            }
@@ -28,7 +28,7 @@
         "bio":  "xnnsxkamln ",   
         "profileInfo": {
            "speciality": "Mental Health",
-           "typeOfSession": "nopreference",
+           "typeOfSession": "session_nopreference",
            "gender": "Female",
            "ethnicity": "Asian"
            }
@@ -52,7 +52,7 @@
         "bio":  "10 years experience helping couples mend broken relationships",   
         "profileInfo": {
            "speciality": "Relationships",
-           "typeOfSession": "nopreference",
+           "typeOfSession": "session_nopreference",
            "gender": "Female",
            "ethnicity": "White"
            }
@@ -76,7 +76,7 @@
         "bio":  "X",   
         "profileInfo": {
             "speciality": "Relationships",
-            "typeOfSession": "nopreference",
+            "typeOfSession": "session_nopreference",
             "gender": "Female",
             "ethnicity": "White"
             }
@@ -112,7 +112,7 @@
         "bio":  "10 years experience helping couples mend broken relationships",   
         "profileInfo": {
             "speciality": "Relationships",
-            "typeOfSession": "nopreference",
+            "typeOfSession": "session_nopreference",
             "gender": "Female",
             "ethnicity": "White"
             }

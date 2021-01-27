@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 
 const Filter = (props) => {
     let typeOfSession = props.filters.typeOfSession
+    let gender = props.filters.gender
 
     const handleSubmit = (event) =>{
         event.preventDefault();
@@ -11,7 +12,8 @@ const Filter = (props) => {
     };
 
     return (
-        <Form onSubmit={handleSubmit}>
+        <Form onSubmit={handleSubmit} >
+            <p>TYPE OF SESSION</p>
             <div key="online">
                 <Form.Check 
                     type="radio"
@@ -39,7 +41,7 @@ const Filter = (props) => {
                 />
             </div>
 
-             <div key="nopreference">
+             <div key="session_nopreference">
                 <Form.Check 
                     type="radio"
                     id="session_nopreference"
@@ -51,11 +53,54 @@ const Filter = (props) => {
                     }
                 />
             </div>
+            <br></br>
+            <p>GENDER</p>            
+            <div key="male">
+                <Form.Check 
+                    type="radio"
+                    id="male"
+                    label="Male"
+                    name="gender"
+                    checked={gender === "male"}
+                    onChange={(e) =>
+                        {props.setFilters({...props.filters, gender: e.target.id})}
+                    }
 
-            <Button type="submit">
+                />
+            </div>
+
+            <div key="female">
+                <Form.Check 
+                    type="radio"
+                    id="female"
+                    label="Female"
+                    name="gender"
+                    checked={gender === "female"}
+                    onChange={(e) =>
+                        {props.setFilters({...props.filters, gender: e.target.id})}
+                    }
+                />
+            </div>
+
+             <div key="gender_nopreference">
+                <Form.Check 
+                    type="radio"
+                    id="male"
+                    id="female"
+                    label="No Preference"
+                    name="gender"
+                    checked={gender === "gender_nopreference"}
+                    onChange={(e) =>
+                        {props.setFilters({...props.filters, gender: e.target.id})}
+                    }
+                />
+            </div>
+
+            <Button variant="outline-secondary"  type="submit" >
                 Submit
             </Button>
         </Form>
+
     )
 }
 

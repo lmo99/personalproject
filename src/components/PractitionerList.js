@@ -12,6 +12,8 @@ const PractitionerList = (props) => {
                     profile={profile} 
                     buttonFunction={props.buttonFunction} 
                     buttonText={props.buttonText}
+                    fullprofilebtn={props.btnFunction}
+                    btnText={props.btnText}
                 />
             )}    
         </div>

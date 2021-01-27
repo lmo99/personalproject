@@ -5,7 +5,7 @@
      "profileInfo": {
         "speciality": "Relationships",
         "typeOfSession": "inperson",
-        "gender": "Female",
+        "gender": "female",
         "ethnicity": "Black"
         }
     },
@@ -17,7 +17,7 @@
         "profileInfo": {
            "speciality": "Families",
            "typeOfSession": "session_nopreference",
-           "gender": "Female",
+           "gender": "female",
            "ethnicity": "White"
            }
        },
@@ -29,7 +29,7 @@
         "profileInfo": {
            "speciality": "Mental Health",
            "typeOfSession": "session_nopreference",
-           "gender": "Female",
+           "gender": "female",
            "ethnicity": "Asian"
            }
        },
@@ -41,7 +41,7 @@
         "profileInfo": {
            "speciality": "Addiction",
            "typeOfSession": "inperson",
-           "gender": "Male",
+           "gender": "male",
            "ethnicity": "White"
            }
        },
@@ -53,7 +53,7 @@
         "profileInfo": {
            "speciality": "Relationships",
            "typeOfSession": "session_nopreference",
-           "gender": "Female",
+           "gender": "female",
            "ethnicity": "White"
            }
        },
@@ -65,7 +65,7 @@
         "profileInfo": {
            "speciality": "Grief/Trauma",
            "typeOfSession": "online",
-           "gender": "Female",
+           "gender": "female",
            "ethnicity": "White"
            }
        },
@@ -77,7 +77,7 @@
         "profileInfo": {
             "speciality": "Relationships",
             "typeOfSession": "session_nopreference",
-            "gender": "Female",
+            "gender": "female",
             "ethnicity": "White"
             }
         },
@@ -85,11 +85,11 @@
     {
         "id": "1007",
         "name": "DK",
-        "bio":  "X",   
+        "bio":  "Xx",   
         "profileInfo": {
             "speciality": "Mental Health",
             "typeOfSession": "online",
-            "gender": "Male",
+            "gender": "male",
             "ethnicity": "Black"
             }
         },
@@ -101,7 +101,7 @@
         "profileInfo": {
             "speciality": "Addiction",
             "typeOfSession": "inperson",
-            "gender": "Male",
+            "gender": "male",
             "ethnicity": "White"
             }
         },
@@ -113,7 +113,7 @@
         "profileInfo": {
             "speciality": "Relationships",
             "typeOfSession": "session_nopreference",
-            "gender": "Female",
+            "gender": "female",
             "ethnicity": "White"
             }
         },
@@ -125,7 +125,7 @@
         "profileInfo": {
             "speciality": "Grief/Trauma",
             "typeOfSession": "online",
-            "gender": "Female",
+            "gender": "female",
             "ethnicity": "Other"
             }
         }

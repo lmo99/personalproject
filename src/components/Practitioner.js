@@ -15,6 +15,7 @@ const Practitioner = (props) => {
                             {props.profile.bio}
                         </Card.Text>
                         <button onClick={() => props.buttonFunction(props.profile)}>{props.buttonText}</button>
+                        <button onClick={() => props.buttonFunction()}>{props.btnText}</button>
                     </Card.Body>
                 </Card>    
             </div>  

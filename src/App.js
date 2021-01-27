@@ -9,15 +9,20 @@ import data from './models/data.json';
 import logo from './logo.svg';
 
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {Nav, Navbar, NavDropdown} from'react-bootstrap'
+
 
 const App = () => {
 
   const [profiles, setProfiles] = useState(data);
   const [practitionerList, setPractitionerList] = useState([]);
+  const fullprofilebtn = document.getElementById('fullprofilebtn')
   const [filters, setFilters] = useState({
     typeOfSession: "session_nopreference",
-    gender: "nopreference"
+    gender: "gender_nopreference"
   })
+
  
   function addProfile(profile) {
     setPractitionerList(practitionerList => [...practitionerList, profile]);
@@ -36,8 +41,19 @@ const App = () => {
       profiles.filter(profile => 
       profile["profileInfo"]["typeOfSession"] === filters.typeOfSession || 
       profile["profileInfo"]["typeOfSession"] ==="session_nopreference")
+    )
+    setProfiles(
+      profiles.filter(profile => 
+      profile["profileInfo"]["gender"] === filters.gender || 
+      profile["profileInfo"]["gender"] ==="gender_nopreference")
 
     )
+    
+  }
+
+
+  function fullProfile(profile) {
+  
   }
 
   if (profiles.length === 0){
@@ -45,7 +61,23 @@ const App = () => {
   }
   
   return (
-    <div>        
+    <div>
+    <Navbar collapseOnSelect expand="lg" bg="secondary" variant="dark">
+    <Navbar.Brand exact path="/" >Home</Navbar.Brand>
+    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+    <Navbar.Collapse id="responsive-navbar-nav">
+      <Nav className="mr-auto">
+        <Nav.Link path="#savedprofiles">Saved Profiles</Nav.Link>
+        <Nav.Link path="/myprofile">My Profile</Nav.Link>
+        <NavDropdown path="/about" id="collasible-nav-dropdown">
+        <NavDropdown.Item path="/abouttus">About Us</NavDropdown.Item>
+          <NavDropdown.Item path="/contactus">Contact Us</NavDropdown.Item>
+          <NavDropdown.Divider />
+          <NavDropdown.Item path="/tsandcs">Terms and Conditions</NavDropdown.Item>
+        </NavDropdown>
+      </Nav>
+    </Navbar.Collapse>
+  </Navbar>   
       
         <BrowserRouter>
           <Route exact path="/" render={() => (
@@ -53,6 +85,7 @@ const App = () => {
             <Header practitionerList={practitionerList} />
             <Filter filters={filters} setFilters={setFilters} filterPractitioners={filterPractitioners}/>
             <PractitionerList data={profiles} buttonFunction={addProfile} buttonText="Save +"/>
+    
           </>
             )} />
 
@@ -60,7 +93,23 @@ const App = () => {
           <>
             <Header practitionerList={practitionerList} />
             <h3>SAVED PROFILES</h3>
-            <PractitionerList data={practitionerList} buttonFunction={removeProfile} buttonText="Remove -"/>
+            <PractitionerList data={practitionerList} buttonFunction={removeProfile} buttonText="Remove -" fullprofilebtn={fullProfile} btnText="View Full Profile"/>
+          </>
+        )} />
+
+         <Route path="/myprofile" render={() => (
+          <>
+            <Header practitionerList={practitionerList} />
+            <h3>WELCOME TO YOUR PROFILE</h3>
+          
+          </>
+        )} />
+
+         <Route path="/contactus" render={() => (
+          <>
+            <Header practitionerList={practitionerList} />
+            <h3>CONTACT US</h3>
+            
           </>
         )} />
       
@@ -72,12 +121,14 @@ const App = () => {
             >
             </a>
         </BrowserRouter> 
+
+        
         </div>
           
 
   )
 
-          }
+          };
 
           
 export default App;

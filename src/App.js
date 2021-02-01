@@ -37,7 +37,6 @@ const App = () => {
   }
 
   function filterPractitioners() {
-    // figure out useReducer for returning to initial state
     setProfiles(
       profiles.filter(profile => 
         (profile["profileInfo"]["typeOfSession"] === filters.typeOfSession || 
@@ -48,11 +47,6 @@ const App = () => {
 
     )
     
-  }
-
-
-  function fullProfile(profile) {
-  
   }
 
   if (profiles.length === 0){
@@ -92,7 +86,11 @@ const App = () => {
           <>
             <Header practitionerList={practitionerList} />
             <h3>SAVED PROFILES</h3>
-            <PractitionerList data={practitionerList} buttonFunction={removeProfile} buttonText="Remove -" fullprofilebtn={fullProfile} btnText="View Full Profile"/>
+            <PractitionerList 
+              data={practitionerList} 
+              buttonFunction={removeProfile} 
+              buttonText="Remove -" 
+              savedProfiles={true}/>
           </>
         )} />
 

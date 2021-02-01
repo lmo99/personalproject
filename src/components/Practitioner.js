@@ -2,7 +2,10 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 
 const Practitioner = (props) => {
-    console.log(props.data)
+    function displayFullProfile(profile) {
+        console.log("Display Full Profile")
+    }
+    // an onClick function that takes in profiles that have been clicked including data, will then use Browser Router to display full profile page
         return(
             <div className="container">
                 <Card style={{ width: '15rem'}}>
@@ -15,8 +18,8 @@ const Practitioner = (props) => {
                             {props.profile.bio}
                         </Card.Text>
                         <button onClick={() => props.buttonFunction(props.profile)}>{props.buttonText}</button>
-                        {/* send saved profile prop to decide on buttons */}
-                        <button onClick={() => props.buttonFunction()}>{props.btnText}</button>
+                        {props.savedProfiles && 
+                            <button onClick={() => displayFullProfile(props.profile)}>Full Profile</button>}
                     </Card.Body>
                 </Card>    
             </div>  
@@ -24,25 +27,3 @@ const Practitioner = (props) => {
     }
     
 export default Practitioner;
-
-// const Practitioner = (props) => {
-//     return(
-//         <div>
-//             <div className="profile__name">{props.profile.name}</div>
-//             <div className="profile__bio">{props.profile.bio}</div>
-//             <div className="profile__speciality">{props.profile.profileInfo.speciality}</div>
-//             <div className="profile__typeOfSession">{props.profile.profileInfo.typeOfSession}</div>
-//             <div className="profile__gender">{props.profile.profileInfo.gender}</div>
-//             <div className="profile__ethnicity">{props.profile.profileInfo.ethnicity}</div>
-
-//             <button onClick={() => props.buttonFunction(props.data)}>{props.buttonText}</button>
-
-
-
-//         </div>
-//     )
-    
-
-// }
-
-// export default Practitioner;

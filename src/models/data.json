@@ -76,7 +76,7 @@
         "bio":  "X",   
         "profileInfo": {
             "speciality": "Relationships",
-            "typeOfSession": "session_nopreference",
+            "typeOfSession": "inperson",
             "gender": "female",
             "ethnicity": "White"
             }

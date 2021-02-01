@@ -8,7 +8,7 @@ const Filter = (props) => {
 
     const handleSubmit = (event) =>{
         event.preventDefault();
-        props.filterPractitioners(props.filters);
+        props.filterPractitioners();
     };
 
     return (
@@ -85,8 +85,7 @@ const Filter = (props) => {
              <div key="gender_nopreference">
                 <Form.Check 
                     type="radio"
-                    id="male"
-                    id="female"
+                    id="gender_nopreference"
                     label="No Preference"
                     name="gender"
                     checked={gender === "gender_nopreference"}

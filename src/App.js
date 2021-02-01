@@ -36,16 +36,15 @@ const App = () => {
     setProfiles(profiles => [...profiles, profile]);
   }
 
-  function filterPractitioners(selectedFilters) {
+  function filterPractitioners() {
+    // figure out useReducer for returning to initial state
     setProfiles(
       profiles.filter(profile => 
-      profile["profileInfo"]["typeOfSession"] === filters.typeOfSession || 
-      profile["profileInfo"]["typeOfSession"] ==="session_nopreference")
-    )
-    setProfiles(
-      profiles.filter(profile => 
-      profile["profileInfo"]["gender"] === filters.gender || 
-      profile["profileInfo"]["gender"] ==="gender_nopreference")
+        (profile["profileInfo"]["typeOfSession"] === filters.typeOfSession || 
+        profile["profileInfo"]["typeOfSession"] === "session_nopreference") &&
+        (profile["profileInfo"]["gender"] === filters.gender || 
+        filters.gender === "gender_nopreference")
+      )
 
     )
     

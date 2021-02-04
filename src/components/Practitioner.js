@@ -7,6 +7,7 @@ const Practitioner = (props) => {
     }
     // an onClick function that takes in profiles that have been clicked including data, will then use Browser Router to display full profile page
         return(
+            <>
             <div className="container">
                 <Card style={{ width: '15rem'}}>
                     <Card.Img variant="top" src="http://romanroadtrust.co.uk/wp-content/uploads/2018/01/profile-icon-png-898.png" />
@@ -22,7 +23,8 @@ const Practitioner = (props) => {
                             <button onClick={() => displayFullProfile(props.profile)}>Full Profile</button>}
                     </Card.Body>
                 </Card>    
-            </div>  
+            </div> 
+            </> 
         )
     }
     

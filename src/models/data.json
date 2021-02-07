@@ -2,18 +2,20 @@
      "id": "1000",
      "name": "JB",
      "bio":  "An expert relationship counsellor, with over 20 years experience ",   
+     "fullProfile": "fill in full profile section here id 1000",
      "profileInfo": {
         "speciality": "Relationships",
         "typeOfSession": "inperson",
         "gender": "female",
         "ethnicity": "Black"
-        }
+        }  
     },
 
     {
         "id": "1001",
         "name": "KR",
-        "bio":  "A wealth of experience with mending family relationships",   
+        "bio":  "A wealth of experience with mending family relationships", 
+        "fullProfile": "fill in full profile section here id 1001",  
         "profileInfo": {
            "speciality": "Families",
            "typeOfSession": "session_nopreference",
@@ -25,7 +27,8 @@
     {
         "id": "1002",
         "name": "AP",
-        "bio":  "xnnsxkamln ",   
+        "bio":  "Mental health specialist",   
+        "fullProfile": "fill in full profile section here id 1002",
         "profileInfo": {
            "speciality": "Mental Health",
            "typeOfSession": "session_nopreference",
@@ -37,7 +40,8 @@
     {
         "id": "1003",
         "name": "MA",
-        "bio":  "mc ms ncm ",   
+        "bio":  "Experienced addiction therapist",  
+        "fullProfile": "fill in full profile section here id 1003", 
         "profileInfo": {
            "speciality": "Addiction",
            "typeOfSession": "inperson",
@@ -61,7 +65,7 @@
     {
         "id": "1005",
         "name": "DL",
-        "bio":  "Experience grief, trauma and PTSD therapist",   
+        "bio":  "Experienced grief, trauma and PTSD therapist",   
         "profileInfo": {
            "speciality": "Grief/Trauma",
            "typeOfSession": "online",
@@ -73,7 +77,7 @@
     {
         "id": "1006",
         "name": "OC",
-        "bio":  "X",   
+        "bio":  "Helping you repair your relationships",   
         "profileInfo": {
             "speciality": "Relationships",
             "typeOfSession": "inperson",
@@ -85,7 +89,7 @@
     {
         "id": "1007",
         "name": "DK",
-        "bio":  "Xx",   
+        "bio":  "Vast experience in helping to treat a variety of mental health issues",   
         "profileInfo": {
             "speciality": "Mental Health",
             "typeOfSession": "online",
@@ -97,7 +101,7 @@
     {
         "id": "1008",
         "name": "YD",
-        "bio":  "mc ms ncm ",   
+        "bio":  "Helping patients overcome addictions",   
         "profileInfo": {
             "speciality": "Addiction",
             "typeOfSession": "inperson",
@@ -121,7 +125,7 @@
     {
         "id": "1010",
         "name": "GN",
-        "bio":  "Experience grief, trauma and PTSD therapist",   
+        "bio":  "Experienced grief, trauma and PTSD therapist",   
         "profileInfo": {
             "speciality": "Grief/Trauma",
             "typeOfSession": "online",

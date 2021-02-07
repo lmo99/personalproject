@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {BrowserRouter, Route} from 'react-router-dom';
+import {BrowserRouter, Route, useParams, Switch} from 'react-router-dom';
 
 import Filter from './components/Filter';
 import Header from './components/Header';
@@ -54,54 +54,60 @@ const App = () => {
     return 'No profiles found';
   }
   
+  function Child() {
+  
+    let { id } = useParams();
+  
+    return (
+      <div>
+        <h3>ID: {id}</h3>
+      </div>
+    );
+  }
+
   return (
     <div>
         <MyNav practitionerCount={practitionerList.length}/>
         <BrowserRouter>
           <Route exact path="/" render={() => (
-          <>
-            <Header />
-            <Filter filters={filters} setFilters={setFilters} filterPractitioners={filterPractitioners}/>
-            <PractitionerList data={profiles} buttonFunction={addProfile} buttonText="Save +"/>
-    
-          </>
-            )} />
+            <>
+              <Header />
+              <Filter filters={filters} setFilters={setFilters} filterPractitioners={filterPractitioners}/>
+              <PractitionerList data={profiles} buttonFunction={addProfile} buttonText="Save +"/>
+            </>
+          )} />
 
-         <Route path="/savedprofiles" render={() => (
-          <>
-            <Header />
-            <h3>SAVED PROFILES</h3>
-            <PractitionerList 
-              data={practitionerList} 
-              buttonFunction={removeProfile} 
-              buttonText="Remove -" 
-              savedProfiles={true}/>
-          </>
-        )} />
+          <Route path="/savedprofiles" render={() => (
+            <>
+              <Header />
+              <h3>SAVED PROFILES</h3>
+              <PractitionerList 
+                data={practitionerList} 
+                buttonFunction={removeProfile} 
+                buttonText="Remove -" 
+                savedProfiles={true}/>
+            </>
+          )} />
 
-         <Route path="/myprofile" render={() => (
-          <>
-            <Header />
-            <h3>WELCOME TO YOUR PROFILE</h3>
-          
-          </>
-        )} />
+          <Route path="/myprofile" render={() => (
+            <>
+              <Header />
+              <h3>WELCOME TO YOUR PROFILE</h3>
+            </>
+          )} />
 
-         <Route path="/contactus" render={() => (
-          <>
-            <Header />
-            <h3>CONTACT US</h3>
-            
-          </>
-        )} />
+          <Route path="/contactus" render={() => (
+            <>
+              <Header />
+              <h3>CONTACT US</h3>
+              
+            </>
+          )} />
       
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-            >
-            </a>
+          <Switch>
+            <Route path="/:id" children={<Child />} />
+          </Switch>
+
         </BrowserRouter> 
 
         

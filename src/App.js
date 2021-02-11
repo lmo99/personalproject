@@ -5,6 +5,7 @@ import Filter from './components/Filter';
 import Header from './components/Header';
 import PractitionerList from './components/PractitionerList';
 import MyNav from './components/MyNav';
+import FullPracProfile from './components/FullPracProfile';
 
 import data from './models/data.json';
 import logo from './logo.svg';
@@ -54,15 +55,14 @@ const App = () => {
     return 'No profiles found';
   }
   
-  function Child() {
+  function ProfileLookup() {
   
     let { id } = useParams();
-  
+    const lookedUpProfile = initialProfileData.filter(profile => profile.id === id)[0]
+
     return (
-      <div>
-        <h3>ID: {id}</h3>
-      </div>
-    );
+      <FullPracProfile profile={lookedUpProfile} />
+    )
   }
 
   return (
@@ -105,7 +105,9 @@ const App = () => {
           )} />
       
           <Switch>
-            <Route path="/:id" children={<Child />} />
+            <Route path="/:id" children={
+              <ProfileLookup />
+            } />
           </Switch>
 
         </BrowserRouter> 

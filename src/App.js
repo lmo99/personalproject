@@ -67,8 +67,9 @@ const App = () => {
 
   return (
     <div>
-        <MyNav practitionerCount={practitionerList.length}/>
-        <BrowserRouter>
+      <MyNav practitionerCount={practitionerList.length}/>
+      <BrowserRouter>
+        <Switch>
           <Route exact path="/" render={() => (
             <>
               <Header />
@@ -99,26 +100,17 @@ const App = () => {
           <Route path="/contactus" render={() => (
             <>
               <Header />
-              <h3>CONTACT US</h3>
-              
+              <h3>CONTACT US</h3>  
             </>
           )} />
       
-          <Switch>
-            <Route path="/:id" children={
-              <ProfileLookup />
-            } />
-          </Switch>
-
-        </BrowserRouter> 
-
-        
-        </div>
-          
-
+          <Route path="/:id" children={
+            <ProfileLookup />
+          } />
+        </Switch>
+      </BrowserRouter>     
+    </div>
   )
-
-          };
-
-          
+};
+      
 export default App;

@@ -3,13 +3,8 @@ import { Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Practitioner = (props) => {
-    function displayFullProfile(profile) {
-        console.log("Display Full Profile")
-    }
-
-    // an onClick function that takes in profiles that have been clicked including data, will then use Browser Router to display full profile page
-        return(
-            <>
+    return(
+        <>
             <div className="container">
                 <Card style={{ width: '15rem'}}>
                     <Card.Img variant="top" src="http://romanroadtrust.co.uk/wp-content/uploads/2018/01/profile-icon-png-898.png" />
@@ -26,13 +21,12 @@ const Practitioner = (props) => {
                             <Link to={`${props.profile.id}`}>
                                 <button>Full Profile</button>   
                             </Link>
-                        }
-                            
+                        }     
                     </Card.Body>
                 </Card>    
             </div> 
-            </> 
-        )
-    }
+        </> 
+    )
+}
     
 export default Practitioner;

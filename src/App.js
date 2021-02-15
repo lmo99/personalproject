@@ -8,7 +8,6 @@ import MyNav from './components/MyNav';
 import FullPracProfile from './components/FullPracProfile';
 
 import data from './models/data.json';
-import logo from './logo.svg';
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -18,7 +17,6 @@ const App = () => {
   const initialProfileData = data
   const [profiles, setProfiles] = useState(initialProfileData);
   const [practitionerList, setPractitionerList] = useState([]);
-  const fullprofilebtn = document.getElementById('fullprofilebtn')
   const [filters, setFilters] = useState({
     typeOfSession: "session_nopreference",
     gender: "gender_nopreference"

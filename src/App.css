@@ -53,27 +53,15 @@ h1 {
   text-align: center;
 }
 
-button {
+div > button {
   align-self: center;
   background-color: plum;
   color:wheat;
   padding: 15px;
   border:none;
-  border-radius:50%;
+  border-radius: 40%;
   cursor:pointer;
   align-self: center;
   margin: 4px 2px;
 
-}
-
-.Button {
-  align-self: center;
-  background-color: plum;
-  color:wheat;
-  padding: 15px;
-  border:none;
-  border-radius:50%;
-  cursor:pointer;
-  align-self: center;
-  margin: 4px 2px;
 }

@@ -66,9 +66,9 @@ const App = () => {
   }
 
   return (
-    <div>
-      <MyNav practitionerCount={practitionerList.length}/>
+    <div className="main">
       <BrowserRouter>
+        <MyNav practitionerCount={practitionerList.length}/>
         <Switch>
           <Route exact path="/" render={() => (
             <>

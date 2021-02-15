@@ -21,12 +21,13 @@ const Practitioner = (props) => {
                             {props.profile.bio}
                         </Card.Text>
                         <button onClick={() => props.buttonFunction(props.profile)}>{props.buttonText}</button>
-                        {/* {props.savedProfiles &&  */}
-                            {/* <button onClick={() => displayFullProfile(props.profile)}>Full Profile</button> */}
-                        <Link to={`${props.profile.id}`}>
-                            <button>Full Profile</button>   
-                        </Link>
-                            {/* } */}
+                        {props.savedProfiles &&
+                    
+                            <Link to={`${props.profile.id}`}>
+                                <button>Full Profile</button>   
+                            </Link>
+                        }
+                            
                     </Card.Body>
                 </Card>    
             </div> 

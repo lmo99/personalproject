@@ -53,7 +53,8 @@ h1 {
   text-align: center;
 }
 
-div > button {
+div > button,
+a > button {
   align-self: center;
   background-color: plum;
   color:wheat;

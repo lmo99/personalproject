@@ -20,7 +20,8 @@ const App = () => {
   const [practitionerList, setPractitionerList] = useState([]);
   const [filters, setFilters] = useState({
     typeOfSession: "session_nopreference",
-    gender: "gender_nopreference"
+    gender: "gender_nopreference",
+    ethnicity: []
   })
 
  
@@ -37,6 +38,7 @@ const App = () => {
   }
 
   function filterPractitioners() {
+    console.log(filters.ethnicity)
     setProfiles(
       initialProfileData.filter(profile => 
         (profile["profileInfo"]["typeOfSession"] === filters.typeOfSession || 

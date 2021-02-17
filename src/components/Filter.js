@@ -6,11 +6,18 @@ import '../assets/Filter.css';
 const Filter = (props) => {
     let typeOfSession = props.filters.typeOfSession
     let gender = props.filters.gender
+    let ethnicity = props.filters.ethnicity
 
-    const handleSubmit = (event) =>{
+    const handleSubmit = (event) => {
         event.preventDefault();
         props.filterPractitioners();
     };
+
+    const handleChecked = (event) => {
+        const checkedArray = []
+        checkedArray.push(event.target.id)
+        props.setFilters({...props.filters, ethnicity: checkedArray})
+    }
 
     return (
         <Form onSubmit={handleSubmit} >
@@ -98,6 +105,52 @@ const Filter = (props) => {
                             }
                         />
                     </div>
+                </div>
+
+                <div className="ethnicity">
+                    <p>ETHNICITY</p>  
+                    <div key="ethnicity_black">
+                        <Form.Check 
+                            type="checkbox"
+                            id="ethnicity_black"
+                            label="Black"
+                            name="ethnicity"
+                            checked={ethnicity === "ethnicity_black"}
+                            onChange={() => {}}
+                            // onChange={(e) =>
+                            //     {handleChecked(e)}
+                            // }
+                        />
+                    </div>
+
+                    <div key="ethnicity_white">
+                        <Form.Check 
+                            type="checkbox"
+                            id="ethnicity_white"
+                            label="White"
+                            name="ethnicity"
+                            checked={ethnicity === "ethnicity_white"}
+                            onChange={() => {}}
+                            // onChange={(e) =>
+                            //     {props.setFilters({...props.filters, ethnicity: e.target.id})}
+                            // }
+                        />
+                    </div>
+
+                    <div key="ethnicity_asian">
+                        <Form.Check 
+                            type="checkbox"
+                            id="ethnicity_asian"
+                            label="Asian"
+                            name="ethnicity"
+                            checked={ethnicity === "ethnicity_asian"}
+                            onChange={() => {}}
+                            // onChange={(e) =>
+                            //     {props.setFilters({...props.filters, ethnicity: e.target.id})}
+                            // }
+                        />
+                    </div>
+
                 </div>
             </div>
             <div className="filter-button">

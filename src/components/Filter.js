@@ -1,6 +1,7 @@
 import React from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import '../assets/Filter.css';
 
 const Filter = (props) => {
     let typeOfSession = props.filters.typeOfSession
@@ -99,9 +100,11 @@ const Filter = (props) => {
                     </div>
                 </div>
             </div>
+            <div className="filter-button">
                 <Button variant="outline-secondary"  type="submit" >
                     Submit
                 </Button>
+            </div>
         </Form>
         
     )

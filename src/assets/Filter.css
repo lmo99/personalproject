@@ -6,6 +6,10 @@
     justify-items: center;
 }
 
+.filter-button {
+    padding: 10px 0;
+}
+
 @media screen and (min-width: 480px) {
     .filter {
         grid-template-columns: 1fr 1fr 1fr; 

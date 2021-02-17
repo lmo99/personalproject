@@ -6,6 +6,12 @@
     justify-items: center;
 }
 
+.full-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
 @media screen and (min-width: 480px) {
     .container {
         grid-template-columns: 1fr 1fr; 

@@ -15,7 +15,7 @@
         "id": "1001",
         "name": "KR",
         "bio":  "A wealth of experience with mending family relationships", 
-        "fullProfile": "fill in full profile section here id 1001",  
+        "fullProfile": "fill in full profile section here id 1001 fill in full profile section here id 1001 fill in full profile section here id 1001 fill in full profile section here id 1001 fill in full profile section here id 1001",  
         "profileInfo": {
            "speciality": "Families",
            "typeOfSession": "session_nopreference",
@@ -52,8 +52,9 @@
 
     {
         "id": "1004",
-        "name": "DL",
+        "name": "PL",
         "bio":  "10 years experience helping couples mend broken relationships",   
+        "fullProfile": "fill in full profile section here id 1004",
         "profileInfo": {
            "speciality": "Relationships",
            "typeOfSession": "session_nopreference",

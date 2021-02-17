@@ -14,6 +14,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const App = () => {
+  
   const initialProfileData = data
   const [profiles, setProfiles] = useState(initialProfileData);
   const [practitionerList, setPractitionerList] = useState([]);

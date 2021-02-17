@@ -57,9 +57,9 @@ div > button {
   align-self: center;
   background-color: plum;
   color:wheat;
-  padding: 15px;
+  padding: 10px;
   border:none;
-  border-radius: 40%;
+  border-radius: 10%;
   cursor:pointer;
   align-self: center;
   margin: 4px 2px;

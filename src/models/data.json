@@ -7,7 +7,7 @@
         "speciality": "Relationships",
         "typeOfSession": "inperson",
         "gender": "female",
-        "ethnicity": "Black"
+        "ethnicity": "ethnicity_black"
         }  
     },
 
@@ -20,7 +20,7 @@
            "speciality": "Families",
            "typeOfSession": "session_nopreference",
            "gender": "female",
-           "ethnicity": "White"
+           "ethnicity": "ethnicity_white"
            }
        },
 
@@ -33,7 +33,7 @@
            "speciality": "Mental Health",
            "typeOfSession": "session_nopreference",
            "gender": "female",
-           "ethnicity": "Asian"
+           "ethnicity": "ethnicity_asian"
            }
        },
 
@@ -46,7 +46,7 @@
            "speciality": "Addiction",
            "typeOfSession": "inperson",
            "gender": "male",
-           "ethnicity": "White"
+           "ethnicity": "ethnicity_white"
            }
        },
 
@@ -59,7 +59,7 @@
            "speciality": "Relationships",
            "typeOfSession": "session_nopreference",
            "gender": "female",
-           "ethnicity": "White"
+           "ethnicity": "ethnicity_white"
            }
        },
 
@@ -71,7 +71,7 @@
            "speciality": "Grief/Trauma",
            "typeOfSession": "online",
            "gender": "female",
-           "ethnicity": "White"
+           "ethnicity": "ethnicity_white"
            }
        },
 
@@ -83,7 +83,7 @@
             "speciality": "Relationships",
             "typeOfSession": "inperson",
             "gender": "female",
-            "ethnicity": "White"
+            "ethnicity": "ethnicity_white"
             }
         },
 
@@ -95,7 +95,7 @@
             "speciality": "Mental Health",
             "typeOfSession": "online",
             "gender": "male",
-            "ethnicity": "Black"
+            "ethnicity": "ethnicity_black"
             }
         },
 
@@ -107,7 +107,7 @@
             "speciality": "Addiction",
             "typeOfSession": "inperson",
             "gender": "male",
-            "ethnicity": "White"
+            "ethnicity": "ethnicity_white"
             }
         },
 
@@ -119,7 +119,7 @@
             "speciality": "Relationships",
             "typeOfSession": "session_nopreference",
             "gender": "female",
-            "ethnicity": "White"
+            "ethnicity": "ethnicity_white"
             }
         },
 
@@ -131,7 +131,7 @@
             "speciality": "Grief/Trauma",
             "typeOfSession": "online",
             "gender": "female",
-            "ethnicity": "Other"
+            "ethnicity": "ethnicity_white"
             }
         }
 

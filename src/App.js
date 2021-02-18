@@ -17,7 +17,7 @@ const App = () => {
   
   const initialProfileData = data
   const [profiles, setProfiles] = useState(initialProfileData);
-  const [practitionerList, setPractitionerList] = useState([]);
+  const [savedList, setSavedList] = useState([]);
   const [filters, setFilters] = useState({
     typeOfSession: "session_nopreference",
     gender: "gender_nopreference",
@@ -26,30 +26,29 @@ const App = () => {
 
  
   function addProfile(profile) {
-    setPractitionerList(practitionerList => [...practitionerList, profile]);
+    setSavedList(savedList => [...savedList, profile]);
     const newProfiles = profiles.filter(item => item.id !== profile.id)
     setProfiles(newProfiles);
   }
 
   function removeProfile(profile) {
-    const newPractitionerList = practitionerList.filter(item => item.id !== profile.id)
-    setPractitionerList(newPractitionerList);
+    const newSavedList = savedList.filter(item => item.id !== profile.id)
+    setSavedList(newSavedList);
     setProfiles(profiles => [...profiles, profile]);
   }
 
   function filterPractitioners() {
-    console.log(filters.ethnicity)
     setProfiles(
       initialProfileData.filter(profile => 
         (profile["profileInfo"]["typeOfSession"] === filters.typeOfSession || 
         profile["profileInfo"]["typeOfSession"] === "session_nopreference" ||
         filters.typeOfSession === "session_nopreference") &&
         (profile["profileInfo"]["gender"] === filters.gender || 
-        filters.gender === "gender_nopreference")
+        filters.gender === "gender_nopreference") &&
+        (filters.ethnicity.includes(profile["profileInfo"]["ethnicity"]) || 
+        filters.ethnicity.length === 0)
       )
-
-    )
-    
+    ) 
   }
 
   if (profiles.length === 0){
@@ -69,7 +68,7 @@ const App = () => {
   return (
     <div className="main">
       <BrowserRouter>
-        <MyNav practitionerCount={practitionerList.length}/>
+        <MyNav practitionerCount={savedList.length}/>
         <Switch>
           <Route exact path="/" render={() => (
             <>
@@ -79,22 +78,23 @@ const App = () => {
             </>
           )} />
 
+          
+          <Route path="/myprofile" render={() => (
+            <>
+              <Header />
+              <h3>WELCOME TO YOUR PROFILE</h3>
+            </>
+          )} />
+
           <Route path="/savedprofiles" render={() => (
             <>
               <Header />
               <h3>SAVED PROFILES</h3>
               <PractitionerList 
-                data={practitionerList} 
+                data={savedList} 
                 buttonFunction={removeProfile} 
                 buttonText="Remove -" 
                 savedProfiles={true}/>
-            </>
-          )} />
-
-          <Route path="/myprofile" render={() => (
-            <>
-              <Header />
-              <h3>WELCOME TO YOUR PROFILE</h3>
             </>
           )} />
 

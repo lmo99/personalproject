@@ -14,10 +14,17 @@ const Filter = (props) => {
     };
 
     const handleChecked = (event) => {
-        const checkedArray = []
-        checkedArray.push(event.target.id)
+        let checkedArray = ethnicity
+        const checkedField = event.target.id
+
+        if(checkedArray.includes(checkedField)) {
+            checkedArray.splice(checkedArray.indexOf(checkedField), 1)
+        } else {
+            checkedArray.push(checkedField)
+        }
         props.setFilters({...props.filters, ethnicity: checkedArray})
     }
+    
 
     return (
         <Form onSubmit={handleSubmit} >
@@ -115,11 +122,8 @@ const Filter = (props) => {
                             id="ethnicity_black"
                             label="Black"
                             name="ethnicity"
-                            checked={ethnicity === "ethnicity_black"}
-                            onChange={() => {}}
-                            // onChange={(e) =>
-                            //     {handleChecked(e)}
-                            // }
+                            checked={ethnicity.includes("ethnicity_black")}
+                            onChange={(e) => {handleChecked(e)}}
                         />
                     </div>
 
@@ -129,11 +133,9 @@ const Filter = (props) => {
                             id="ethnicity_white"
                             label="White"
                             name="ethnicity"
-                            checked={ethnicity === "ethnicity_white"}
-                            onChange={() => {}}
-                            // onChange={(e) =>
-                            //     {props.setFilters({...props.filters, ethnicity: e.target.id})}
-                            // }
+                            checked={ethnicity.includes("ethnicity_white")}
+                            onChange={(e) => {handleChecked(e)}}
+                           
                         />
                     </div>
 
@@ -143,14 +145,10 @@ const Filter = (props) => {
                             id="ethnicity_asian"
                             label="Asian"
                             name="ethnicity"
-                            checked={ethnicity === "ethnicity_asian"}
-                            onChange={() => {}}
-                            // onChange={(e) =>
-                            //     {props.setFilters({...props.filters, ethnicity: e.target.id})}
-                            // }
+                            checked={ethnicity.includes("ethnicity_asian")}
+                            onChange={(e) => {handleChecked(e)}}
                         />
                     </div>
-
                 </div>
             </div>
             <div className="filter-button">

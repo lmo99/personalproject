@@ -5,7 +5,7 @@ const Header = ({practitionerList}) => {
     return (
         <div>
             <br></br>
-            <h1>Find a therapist that's right for you... </h1>
+            <h1>FIND A THERPIST THAT'S RIGHT FOR YOU... </h1>
         </div>
     );
 }

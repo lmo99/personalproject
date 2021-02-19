@@ -41,7 +41,13 @@
 h1 {
   color:plum;
   text-align: center;
-  font-family: Tahoma;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+h3 {
+  color:rgb(160, 124, 160);
+  text-align: center;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 
 
@@ -65,4 +71,16 @@ a > button {
   align-self: center;
   margin: 4px 2px;
 
+}
+
+.form {
+  align-self: center;
+  background-color:rgb(218, 210, 210);
+  color:plum;
+  padding: 10px;
+  border:none;
+  border-radius: 0%;
+  cursor:pointer;
+  margin: 2px 2px;
+  width:fit-content;
 }

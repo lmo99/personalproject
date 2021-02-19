@@ -30,7 +30,7 @@ const Filter = (props) => {
         <Form onSubmit={handleSubmit} >
             <div className="filter">
                 <div className="type-of-session">
-                    <p>TYPE OF SESSION</p>
+                <p><strong>TYPE OF SESSION</strong></p> 
                     <div key="online">
                         <Form.Check 
                             type="radio"
@@ -72,7 +72,7 @@ const Filter = (props) => {
                     </div>
                 </div>
                 <div className="gender-filter">
-                    <p>GENDER</p>            
+                    <p><strong>GENDER</strong></p>            
                     <div key="male">
                         <Form.Check 
                             type="radio"
@@ -115,7 +115,7 @@ const Filter = (props) => {
                 </div>
 
                 <div className="ethnicity">
-                    <p>ETHNICITY</p>  
+                <p><strong>ETHNICITY</strong></p>  
                     <div key="ethnicity_black">
                         <Form.Check 
                             type="checkbox"

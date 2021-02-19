@@ -6,6 +6,7 @@ import Header from './components/Header';
 import PractitionerList from './components/PractitionerList';
 import MyNav from './components/MyNav';
 import FullPracProfile from './components/FullPracProfile';
+import MyProfile from './components/MyProfile';
 
 import data from './models/data.json';
 
@@ -73,6 +74,9 @@ const App = () => {
           <Route exact path="/" render={() => (
             <>
               <Header />
+              <br></br>
+              <h3>USE THESE FILTERS TO NARROW DOWN YOUR SEARCH</h3>
+              <br></br>
               <Filter filters={filters} setFilters={setFilters} filterPractitioners={filterPractitioners}/>
               <PractitionerList data={profiles} buttonFunction={addProfile} buttonText="Save +"/>
             </>
@@ -83,6 +87,8 @@ const App = () => {
             <>
               <Header />
               <h3>WELCOME TO YOUR PROFILE</h3>
+              <MyProfile />
+
             </>
           )} />
 
